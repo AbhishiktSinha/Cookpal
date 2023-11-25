@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo-container">
+                <img src="./assets/cookpal-icon.png" alt="">
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-right-inner-container">
+                <ul class="nav-links-container">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <div class="profile-icon-container">                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="hero-banner-container">
+                <div class="hero-banner-text-container">
+                    <div class="row-1">Trending now</div>
+                    <div class="row-2">Mike's famous salad<br>with cheese</div>
+                    <div class="row-3">By John Mike</div>
+                </div>
+            </div>
+
+            <div class="hero-section-search-container">
+                <div class="search-container-heading">Search For Recipies</div>
+
+                <form class="search-input-form" method="get">
+                    <div class="left-search-and-icon-container">
+                        <img src="./assets/search-gray.svg" alt="">
+                        <input type="text" name="search" placeholder="Search for recipes...">
+                    </div>
+                    <button type="submit" class="search-button">
+                        <img src="./assets/search-white.svg" alt="">
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="explore-recipies-section">
+
+            <div class="categories-buttons-container">
+                <button class="categories-button" data-Category="all">All Recipies<img src="./assets/angle-right.svg" alt=""></button>
+                <button class="categories-button" data-Category="veg">Veg Recipies Only<img src="./assets/angle-right.svg" alt=""></button>
+                <button class="categories-button" data-Category="nonveg">Non Veg Recipies<img src="./assets/angle-right.svg" alt=""></button>
+            </div>
+
+            <section class="recipies-container">
+                
+                <div class="filter-recipies-aside">
+                    <div class="filter-header">Filters</div>
+                    
+                    <div class="rating-selection-container">
+                        <div>Rating</div>
+                        <div class="rating-selector-row-container">
+                            <input type="checkbox" id="rating-above4"><label for="rating-above4">4 and Above</label>
+                        </div>
+                        <div class="rating-selector-row-container">
+                            <input type="checkbox" id="rating-below4"><label for="rating-below4">Below 4</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipies-cards-outer-container">
+
+                    <div class="recipie-card">
+                        <div class="recipie-card-image-container"></div>
+                        <div class="recipie-card-bottom-container">
+                            <div class="tag">Non Veg</div>
+                            <div class="card-row-1">
+                                <span class="card-title">Russian Salad</span>
+                                <span class="card-rating"><span class="material-symbols-outlined">star</span> 4.5</span>
+                            </div>
+                            <div class="card-row-2">
+                                <div class="time-required">40 min</div>
+                                <div class="card-actions">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                    <span class="material-symbols-outlined">mode_comment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
