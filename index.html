@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
     <nav>
         <div class="nav-left">
+            <button class="menu-open-button">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
             <div class="logo-container">
                 <img src="./assets/cookpal-icon.png" alt="">
             </div>
@@ -44,7 +49,7 @@
                 <form class="search-input-form" method="get">
                     <div class="left-search-and-icon-container">
                         <img src="./assets/search-gray.svg" alt="">
-                        <input type="text" name="search" placeholder="Search for recipes...">
+                        <input id="search-recipies" type="text" name="search" placeholder="Search for recipes...">
                     </div>
                     <button type="submit" class="search-button">
                         <img src="./assets/search-white.svg" alt="">
@@ -58,50 +63,79 @@
             <div class="categories-buttons-container">
                 <button class="categories-button" data-Category="all">All Recipies<img src="./assets/angle-right.svg" alt=""></button>
                 <button class="categories-button" data-Category="veg">Veg Recipies Only<img src="./assets/angle-right.svg" alt=""></button>
-                <button class="categories-button" data-Category="nonveg">Non Veg Recipies<img src="./assets/angle-right.svg" alt=""></button>
+                <button class="categories-button" data-Category="non-veg">Non Veg Recipies<img src="./assets/angle-right.svg" alt=""></button>
             </div>
 
             <section class="recipies-container">
-                
-                <div class="filter-recipies-aside">
-                    <div class="filter-header">Filters</div>
+                <div class="filter-outer-container">
                     
-                    <div class="rating-selection-container">
-                        <div>Rating</div>
-                        <div class="rating-selector-row-container">
-                            <input type="checkbox" id="rating-above4"><label for="rating-above4">4 and Above</label>
-                        </div>
-                        <div class="rating-selector-row-container">
-                            <input type="checkbox" id="rating-below4"><label for="rating-below4">Below 4</label>
+                    <div class="filter-recipies-aside">
+                        <div class="filter-header">Filters</div>
+                        
+                        <div class="rating-selection-container">
+                            <div>Rating</div>
+                            <div class="rating-selector-row-container">
+                                <input type="checkbox" id="rating-above4"><label for="rating-above4">4 and Above</label>
+                            </div>
+                            <div class="rating-selector-row-container">
+                                <input type="checkbox" id="rating-below4"><label for="rating-below4">Below 4</label>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="recipies-cards-outer-container">
-
-                    <div class="recipie-card">
-                        <div class="recipie-card-image-container"></div>
-                        <div class="recipie-card-bottom-container">
-                            <div class="tag">Non Veg</div>
-                            <div class="card-row-1">
-                                <span class="card-title">Russian Salad</span>
-                                <span class="card-rating"><span class="material-symbols-outlined">star</span> 4.5</span>
-                            </div>
-                            <div class="card-row-2">
-                                <div class="time-required">40 min</div>
-                                <div class="card-actions">
-                                    <span class="material-symbols-outlined">favorite</span>
-                                    <span class="material-symbols-outlined">mode_comment</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
             </section>
         </section>
 
     </main>
+
+    <footer>
+
+        <section class="footer-content-section">
+            <div class="site-brief-section">
+                <div class="logo-container"><img src="./assets/cookpal-icon.png" alt=""></div>
+                <div class="site-brief-details">Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</div>
+            </div>
+
+            <ul class="footer-links-container">
+                <li class="footer-links-heading">Company</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Activity</a></li>
+            </ul>            
+
+            <ul class="footer-links-container">
+                <li class="footer-links-heading">Resources</li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Use cases</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Insights</a></li>                    
+            </ul>            
+
+            <div class="subscription-service-container">
+                <div class="logo-container"><img src="./assets/cookpal-icon.png" alt=""></div>
+                <div class="subscribe-text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nisi vel iste a?</div>
+                <form class="subscription-form">
+                    <input type="text" id="email-id-input" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-socials-section">
+            <button class="fa-brands fa-instagram"></button>
+            <button class="fa-brands fa-twitter"></button>
+            <button class="fa-brands fa-linkedin-in"></button>
+            <button class="fa-brands fa-facebook-f"></button>
+        </section>
+    </footer>
 </body>
 <script src="script.js"></script>
+<script src="drawer.js"></script>
 </html>

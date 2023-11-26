@@ -1,0 +1,2 @@
+recipeArray is also refered to as a Quasi Database
+Everywhere in the js file, Element or Parent suffix refers to the recipeArray element, which contains reference to the card Node, and also the pre-provided attributes
