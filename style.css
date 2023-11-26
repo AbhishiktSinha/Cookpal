@@ -151,6 +151,7 @@ nav {
     align-items: center;
 
     justify-content: space-between;
+    /* row-gap: 25px; */
 }
 
 .hero-banner-container {
@@ -530,6 +531,7 @@ nav {
 
 footer{
     color: var(--BLACK);
+    background-color: var(--ltGRAY);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -733,6 +735,10 @@ footer{
    
 @media screen and (max-width: 735px) {
 
+    .hero-section {
+        row-gap: 25px;
+    }
+
     .recipies-cards-outer-container {
         justify-content: flex-start;
         column-gap: 5%;
@@ -740,13 +746,15 @@ footer{
 
     footer {
 
+        font-size: 13px;
+
         >.footer-content-section {
             flex-direction: column;
 
             row-gap: 25px;
 
             >div {
-                width: 100% !important;
+                width: 90% !important;
             }
             >.subscription-service-container > .subscribe-text-container {
                 text-align: justify;
